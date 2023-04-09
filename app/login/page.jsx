@@ -68,7 +68,7 @@ const Login = () => {
         </div>
       </section>
 
-      <section className="pt-[240px]">
+      <section className="pt-[270px]">
         <div className="container">
           <div className="flex flex-wrap justify-between px-[10px]">
             <div>
