@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const Login = () => {
   return (
-    <div className="gradasi h-[670px]">
+    <div className="gradasi h-screen">
       <section className="pt-6">
         <div className="container flex justify-center ">
           <div className="px-[76px]">
@@ -68,7 +68,7 @@ const Login = () => {
         </div>
       </section>
 
-      <section className="pt-[120px]">
+      <section className="pt-[270px]">
         <div className="container">
           <div className="flex flex-wrap justify-between px-[10px]">
             <div>
@@ -78,7 +78,7 @@ const Login = () => {
             </div>
             <div>
               <Link className="text-white font-bold text-base border-b" href={"/register"}>
-                Register
+                Forget Password
               </Link>
             </div>
           </div>
