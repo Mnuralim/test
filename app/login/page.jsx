@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const Login = () => {
   return (
-    <div className="gradasi h-screen">
+    <div className="gradasi h-screen overflow-hidden">
       <section className="pt-6">
         <div className="container flex justify-center ">
           <div className="px-[76px]">
