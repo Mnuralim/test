@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 
-const Login = () => {
+const ForgotPassword = () => {
   return (
     <div className="gradasi h-screen overflow-hidden">
       <section className="pt-6">
@@ -12,7 +12,13 @@ const Login = () => {
         </div>
       </section>
 
-      <section className="mt-[151px]">
+      <section className="pt-[86px] ">
+        <div className="container flex flex-wrap justify-center">
+          <div className="text-[#243B97] font-bold text-[20px]">Forget Password?</div>
+        </div>
+      </section>
+
+      <section className="mt-[127px]">
         <div className="container mx-auto">
           <div className="px-[30px]">
             <form action="">
@@ -26,22 +32,13 @@ const Login = () => {
                 />
                 <p class="mt-[2px] text-red-600 text-xs invisible peer-invalid:visible">Invalid email</p>
               </label>
-              <label htmlFor="password">
-                <span className="text-[#243B97] text-[15px] font-bold">Password</span>
-                <input
-                  id="password"
-                  type="password"
-                  placeholder="Type here password"
-                  className="py-[14px] px-[13px] block placeholder:text-[#EBEBEB] placeholder:text-[15px] bg-[#64B9FB] rounded-lg text-slate-50 focus:outline-none  w-full mt-2 shadow"
-                />
-              </label>
             </form>
           </div>
           <div className="flex justify-end items-center relative pr-[20px] pt-[25px] ">
-            <div className="absolute right-[46px] group  ">
+            <div className="absolute right-[52px] group  ">
               <Link className="text-[25px] font-extrabold group-hover:text-teal-400" href={"#"}>
-                Lo
-                <span className="text-white group-hover:text-teal-400">gin</span>
+                Se
+                <span className="text-white group-hover:text-teal-400">nd</span>
               </Link>
             </div>
             <div>
@@ -72,13 +69,8 @@ const Login = () => {
         <div className="container">
           <div className="flex flex-wrap justify-between px-[10px]">
             <div>
-              <Link className="text-white font-bold text-base border-b" href={"/register"}>
-                Register
-              </Link>
-            </div>
-            <div>
-              <Link className="text-white font-bold text-base border-b" href={"/forget-password"}>
-                Forget Password
+              <Link className="text-white font-bold text-base border-b" href={"/login"}>
+                Login
               </Link>
             </div>
           </div>
@@ -88,4 +80,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default ForgotPassword;
