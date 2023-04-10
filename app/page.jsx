@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { Inter } from "next/font/google";
 import styles from "./page.module.css";
+// import { Input } from "antd";
 import { BiSearchAlt2 } from "react-icons/bi";
 import Link from "next/link";
 
@@ -16,6 +17,7 @@ export default function Home() {
               <img src="./img/logo.png" alt="logo" className="w-[126px] h-[38px]" />
             </div>
             <div>
+              {/* <Input placeholder="Search" prefix={<BiSearchAlt2 />} suffix="Search" size="large" onChange={(e) => console.log(e.target.value)} /> */}
               <BiSearchAlt2 className="w-[38px] h-[38px] text-[#ABABAB]" />
             </div>
           </div>
@@ -91,7 +93,79 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section></section>
+      <section className="pt-[18px] px-[11px]">
+        <div className="container">
+          <div>
+            <p className="text-[#505050] text-xs">Popular Products</p>
+          </div>
+          <div className="grid grid-cols-4 gap-[14px]">
+            <div className="flex flex-col items-center ">
+              <div className=" flex">
+                <Link href={"#"} className="m-auto ">
+                  <img src="./img/asset2/image 9.png" alt="" className="w-[77px] h-[77px] rounded-md" />
+                </Link>
+              </div>
+              <div className="text-xs font-bold text-[#505050] pt-[5px]">Jas Oversized</div>
+            </div>
+            <div className="flex flex-col items-center ">
+              <div className=" flex">
+                <Link href={"#"} className="m-auto ">
+                  <img src="./img/asset2/image 8 (1).png" alt="" className="w-[77px] h-[77px] rounded-md" />
+                </Link>
+              </div>
+              <div className="text-xs font-bold text-[#505050] pt-[5px]">Jas Oversized</div>
+            </div>
+            <div className="flex flex-col items-center ">
+              <div className=" flex">
+                <Link href={"#"} className="m-auto ">
+                  <img src="./img/asset2/image 7.png" alt="" className="w-[77px] h-[77px] rounded-md" />
+                </Link>
+              </div>
+              <div className="text-xs font-bold text-[#505050] pt-[5px]">Jas Oversized</div>
+            </div>
+            <div className="flex flex-col items-center ">
+              <div className=" flex">
+                <Link href={"#"} className="m-auto ">
+                  <img src="./img/asset2/image 6.png" alt="" className="w-[77px] h-[77px] rounded-md" />
+                </Link>
+              </div>
+              <div className="text-xs font-bold text-[#505050] pt-[5px]">Yellow Blazer</div>
+            </div>
+            <div className="flex flex-col items-center ">
+              <div className=" flex">
+                <Link href={"#"} className="m-auto ">
+                  <img src="./img/asset2/image 9 (1).png" alt="" className="w-[77px] h-[77px] rounded-md" />
+                </Link>
+              </div>
+              <div className="text-xs font-bold text-[#505050] pt-[5px]">Jas Oversized</div>
+            </div>
+            <div className="flex flex-col items-center ">
+              <div className=" flex">
+                <Link href={"#"} className="m-auto ">
+                  <img src="./img/asset2/image 8.png" alt="" className="w-[77px] h-[77px] rounded-md" />
+                </Link>
+              </div>
+              <div className="text-xs font-bold text-[#505050] pt-[5px]">Jas Oversized</div>
+            </div>
+            <div className="flex flex-col items-center ">
+              <div className=" flex">
+                <Link href={"#"} className="m-auto ">
+                  <img src="./img/asset2/image 7 (1).png" alt="" className="w-[77px] h-[77px] rounded-md" />
+                </Link>
+              </div>
+              <div className="text-xs font-bold text-[#505050] pt-[5px]">Jas Oversized</div>
+            </div>
+            <div className="flex flex-col items-center ">
+              <div className=" flex">
+                <Link href={"#"} className="m-auto ">
+                  <img src="./img/asset2/image 6 (1).png" alt="" className="w-[77px] h-[77px] rounded-md" />
+                </Link>
+              </div>
+              <div className="text-xs font-bold text-[#505050] pt-[5px]">Yellow Blazer</div>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
