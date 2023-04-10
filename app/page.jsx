@@ -166,6 +166,40 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <section className="pt-[18px] px-[11px]">
+        <div className="container">
+          <div className="mb-[9px] flex justify-between">
+            <div className="text-[#505050] text-xs">Flesh Sale</div>
+            <div className="text-xs font-bold text-[#505050]">Up To: 9 Jun</div>
+          </div>
+          <div className="grid grid-cols-3 gap-[13px]">
+            <div className="flex flex-col items-center ">
+              <div className=" flex">
+                <Link href={"#"} className="m-auto ">
+                  <img src="./img/asset3/image 7 (2).png" alt="" className="w-[114px] h-[114px] rounded-md" />
+                </Link>
+              </div>
+              <div className="text-xs font-bold text-[#505050] pt-[5px]">Jas Oversized</div>
+            </div>
+            <div className="flex flex-col items-center ">
+              <div className=" flex">
+                <Link href={"#"} className="m-auto ">
+                  <img src="./img/asset3/image 10.png" alt="" className="w-1104px] h-[114px] rounded-md" />
+                </Link>
+              </div>
+              <div className="text-xs font-bold text-[#505050] pt-[5px]">Jas Oversized</div>
+            </div>
+            <div className="flex flex-col items-center ">
+              <div className=" flex">
+                <Link href={"#"} className="m-auto ">
+                  <img src="./img/asset3/image 7 (3).png" alt="" className="w-[114px] h-[114px] rounded-md" />
+                </Link>
+              </div>
+              <div className="text-xs font-bold text-[#505050] pt-[5px]">Jas Oversized</div>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
