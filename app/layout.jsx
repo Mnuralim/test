@@ -7,7 +7,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" className="bg-[#CACACA] max-w-[360px] mx-auto">
       <body>{children}</body>
     </html>
   );
