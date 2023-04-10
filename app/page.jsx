@@ -21,76 +21,77 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="pt-[18px]">
+      <section className="pt-[18px] px-[11px]">
         <div className="container">
           <div className="grid grid-cols-4 gap-[14px]">
             <div className="flex flex-col items-center ">
-              <div className="bg-[#A1A0CB] w-[74px] h-[74px] rounded-full flex">
+              <div className="bg-[#A1A0CB] w-[85px] h-[85px] rounded-full flex">
                 <Link href={"#"} className="m-auto ">
-                  <img src="./img/young-man.png" alt="" />
+                  <img src="./img/asset1/young-man.png" alt="" />
                 </Link>
               </div>
-              <div>Man</div>
+              <div className="text-xs font-bold text-[#505050] pt-[5px]">Man</div>
             </div>
             <div className="flex flex-col items-center ">
-              <div className="bg-[#A1A0CB] w-[74px] h-[74px] rounded-full flex">
+              <div className="bg-[#A1A0CB] w-[85px] h-[85px] rounded-full flex">
                 <Link href={"#"} className="m-auto ">
-                  <img src="./img/young-man.png" alt="" />
+                  <img src="./img/asset1/woman.png" alt="" />
                 </Link>
               </div>
-              <div>Man</div>
+              <div className="text-xs font-bold text-[#505050] pt-[5px]">Women</div>
             </div>
             <div className="flex flex-col items-center ">
-              <div className="bg-[#A1A0CB] w-[74px] h-[74px] rounded-full flex">
+              <div className="bg-[#A1A0CB] w-[85px] h-[85px] rounded-full flex">
                 <Link href={"#"} className="m-auto ">
-                  <img src="./img/young-man.png" alt="" />
+                  <img src="./img/asset1/shop 1.png" alt="" />
                 </Link>
               </div>
-              <div>Man</div>
+              <div className="text-xs font-bold text-[#505050] pt-[5px]">Shop</div>
             </div>
             <div className="flex flex-col items-center ">
-              <div className="bg-[#A1A0CB] w-[74px] h-[74px] rounded-full flex">
+              <div className="bg-[#A1A0CB] w-[85px] h-[85px] rounded-full flex">
                 <Link href={"#"} className="m-auto ">
-                  <img src="./img/young-man.png" alt="" />
+                  <img src="./img/asset1/shopping-bag 1.png" alt="" />
                 </Link>
               </div>
-              <div>Man</div>
+              <div className="text-xs font-bold text-[#505050] pt-[5px]">Groceries</div>
             </div>
             <div className="flex flex-col items-center ">
-              <div className="bg-[#A1A0CB] w-[74px] h-[74px] rounded-full flex">
+              <div className="bg-[#A1A0CB] w-[85px] h-[85px] rounded-full flex">
                 <Link href={"#"} className="m-auto ">
-                  <img src="./img/young-man.png" alt="" />
+                  <img src="./img/asset1/gadgets 1.png" alt="" />
                 </Link>
               </div>
-              <div>Man</div>
+              <div className="text-xs font-bold text-[#505050] pt-[5px]">Electronics</div>
             </div>
             <div className="flex flex-col items-center ">
-              <div className="bg-[#A1A0CB] w-[74px] h-[74px] rounded-full flex">
+              <div className="bg-[#A1A0CB] w-[85px] h-[85px] rounded-full flex">
                 <Link href={"#"} className="m-auto ">
-                  <img src="./img/young-man.png" alt="" />
+                  <img src="./img/asset1/furniture 1.png" alt="" />
                 </Link>
               </div>
-              <div>Man</div>
+              <div className="text-xs font-bold text-[#505050] pt-[5px]">Furniture</div>
             </div>
             <div className="flex flex-col items-center ">
-              <div className="bg-[#A1A0CB] w-[74px] h-[74px] rounded-full flex">
+              <div className="bg-[#A1A0CB] w-[85px] h-[85px] rounded-full flex">
                 <Link href={"#"} className="m-auto ">
-                  <img src="./img/young-man.png" alt="" />
+                  <img src="./img/asset1/presents 1.png" alt="" />
                 </Link>
               </div>
-              <div>Man</div>
+              <div className="text-xs font-bold text-[#505050] pt-[5px]">Gifts & Toys</div>
             </div>
             <div className="flex flex-col items-center ">
-              <div className="bg-[#A1A0CB] w-[74px] h-[74px] rounded-full flex">
+              <div className="bg-[#A1A0CB] w-[85px] h-[85px] rounded-full flex">
                 <Link href={"#"} className="m-auto ">
-                  <img src="./img/young-man.png" alt="" />
+                  <img src="./img/asset1/other 1.png" alt="" />
                 </Link>
               </div>
-              <div>Man</div>
+              <div className="text-xs font-bold text-[#505050] pt-[5px]">See All</div>
             </div>
           </div>
         </div>
       </section>
+      <section></section>
     </div>
   );
 }
