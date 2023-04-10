@@ -169,33 +169,51 @@ export default function Home() {
       <section className="pt-[18px] px-[11px]">
         <div className="container">
           <div className="mb-[9px] flex justify-between">
-            <div className="text-[#505050] text-xs">Flesh Sale</div>
+            <div className="text-[#505050] text-xs">Flash Sale</div>
             <div className="text-xs font-bold text-[#505050]">Up To: 9 Jun</div>
           </div>
           <div className="grid grid-cols-3 gap-[13px]">
-            <div className="flex flex-col items-center ">
+            <div className="flex flex-col  ">
               <div className=" flex">
                 <Link href={"#"} className="m-auto ">
                   <img src="./img/asset3/image 7 (2).png" alt="" className="w-[114px] h-[114px] rounded-md" />
                 </Link>
               </div>
-              <div className="text-xs font-bold text-[#505050] pt-[5px]">Jas Oversized</div>
+              <div className="bg-[#243B97] h-[10px] w-[107px] rounded-[10px] mt-[3px] ">
+                <div className="bg-[#FF0000] h-[10px] w-[70px] rounded-[10px] text-[8px] font-bold text-[#FFFFFF] pl-1 flex items-center">Sold out: 895</div>
+              </div>
+              <div className="flex justify-between items-center">
+                <div className="text-[10px] font-bold text-[#505050] pt-[3px]">Suit Outfit</div>
+                <div className="text-[#FF0000] font-bold text-[10px]">200$</div>
+              </div>
             </div>
-            <div className="flex flex-col items-center ">
+            <div className="flex flex-col  ">
               <div className=" flex">
                 <Link href={"#"} className="m-auto ">
                   <img src="./img/asset3/image 10.png" alt="" className="w-1104px] h-[114px] rounded-md" />
                 </Link>
               </div>
-              <div className="text-xs font-bold text-[#505050] pt-[5px]">Jas Oversized</div>
+              <div className="bg-[#243B97] h-[10px] w-[107px] rounded-[10px] mt-[3px] ">
+                <div className="bg-[#FF0000] h-[10px] w-[70px] rounded-[10px] text-[8px] font-bold text-[#FFFFFF] pl-1 flex items-center">Sold out: 895</div>
+              </div>
+              <div className="flex justify-between items-center">
+                <div className="text-[10px] font-bold text-[#505050] pt-[3px]">Suit Outfit</div>
+                <div className="text-[#FF0000] font-bold text-[10px]">200$</div>
+              </div>
             </div>
-            <div className="flex flex-col items-center ">
+            <div className="flex flex-col  ">
               <div className=" flex">
                 <Link href={"#"} className="m-auto ">
                   <img src="./img/asset3/image 7 (3).png" alt="" className="w-[114px] h-[114px] rounded-md" />
                 </Link>
               </div>
-              <div className="text-xs font-bold text-[#505050] pt-[5px]">Jas Oversized</div>
+              <div className="bg-[#243B97] h-[10px] w-[107px] rounded-[10px] mt-[3px] ">
+                <div className="bg-[#FF0000] h-[10px] w-[70px] rounded-[10px] text-[8px] font-bold text-[#FFFFFF] pl-1 flex items-center">Sold out: 895</div>
+              </div>
+              <div className="flex justify-between gap-0 items-center">
+                <div className="text-[10px] font-bold text-[#505050] pt-[3px]">Suit Outfit</div>
+                <div className="text-[#FF0000] font-bold text-[10px]">200$</div>
+              </div>
             </div>
           </div>
         </div>
