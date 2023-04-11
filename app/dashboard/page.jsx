@@ -1,8 +1,5 @@
-import { Inter } from "next/font/google";
 import { BiSearchAlt2 } from "react-icons/bi";
 import Link from "next/link";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
