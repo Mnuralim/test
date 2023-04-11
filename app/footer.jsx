@@ -23,7 +23,7 @@ const Footer = () => {
               Message
             </div>
             <div className="flex flex-col items-center justify-center">
-              <FcLike color="#777777" className="w-[40px] h-[40px] text-[150px] fill-inherit" />
+              <FcLike className="w-[40px] h-[40px] text-[150px] fill-inherit" />
               Wishlist
             </div>
             <div className="flex flex-col items-center justify-center">
