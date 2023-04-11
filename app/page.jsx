@@ -224,9 +224,9 @@ export default function Home() {
           <div className="flex justify-center pb-3">
             <h1 className="text-xl text-[#505050]">Just for you!</h1>
           </div>
-          <div className="flex flex-wrap gap-[13px] justify-between">
+          <div className="flex flex-wrap gap-[10px] justify-between">
             <div>
-              <div className="shadow-xl border border-solid border-[#505050] w-[195px] rounded-lg h-[236px]">
+              <div className="shadow-xl border border-solid border-[#505050] w-[190px] rounded-lg h-[231px]">
                 <div>
                   <img src="./img/asset4/image 11.png" alt="" className="rounded-lg w-full" />
                 </div>
@@ -269,7 +269,7 @@ export default function Home() {
               </div>
             </div>
             <div>
-              <div className="shadow-xl border border-solid border-[#505050] w-[195px] rounded-lg h-[236px]">
+              <div className="shadow-xl border border-solid border-[#505050] w-[190px] rounded-lg h-[231px]">
                 <div>
                   <img src="./img/asset4/image 11.png" alt="" className="rounded-lg w-full" />
                 </div>
@@ -312,7 +312,7 @@ export default function Home() {
               </div>
             </div>
             <div>
-              <div className="shadow-xl border border-solid border-[#505050] w-[195px] rounded-lg h-[236px]">
+              <div className="shadow-xl border border-solid border-[#505050] w-[190px] rounded-lg h-[231px]">
                 <div>
                   <img src="./img/asset4/image 11.png" alt="" className="rounded-lg w-full" />
                 </div>
@@ -355,7 +355,7 @@ export default function Home() {
               </div>
             </div>
             <div>
-              <div className="shadow-xl border border-solid border-[#505050] w-[195px] rounded-lg h-[236px]">
+              <div className="shadow-xl border border-solid border-[#505050] w-[190px] rounded-lg h-[231px]">
                 <div>
                   <img src="./img/asset4/image 11.png" alt="" className="rounded-lg w-full" />
                 </div>
@@ -398,7 +398,7 @@ export default function Home() {
               </div>
             </div>
             <div>
-              <div className="shadow-xl border border-solid border-[#505050] w-[195px] rounded-lg h-[236px]">
+              <div className="shadow-xl border border-solid border-[#505050] w-[190px] rounded-lg h-[231px]">
                 <div>
                   <img src="./img/asset4/image 11.png" alt="" className="rounded-lg w-full" />
                 </div>
@@ -441,7 +441,7 @@ export default function Home() {
               </div>
             </div>
             <div>
-              <div className="shadow-xl border border-solid border-[#505050] w-[195px] rounded-lg h-[236px]">
+              <div className="shadow-xl border border-solid border-[#505050] w-[190px] rounded-lg h-[231px]">
                 <div>
                   <img src="./img/asset4/image 11.png" alt="" className="rounded-lg w-full" />
                 </div>
