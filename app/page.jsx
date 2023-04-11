@@ -102,7 +102,7 @@ export default function Home() {
             <div className="flex flex-col items-center ">
               <div className=" flex">
                 <Link href={"#"} className="m-auto ">
-                  <img src="./img/asset2/image 9.png" alt="" className="w-[85px] h-[85px] rounded-md" />
+                  <img src="./img/asset2/image 9.png" alt="" className="w-[85px] h-[85px] rounded-md shadow-md " />
                 </Link>
               </div>
               <div className="text-xs font-bold text-[#505050] pt-[5px]">Jas Oversized</div>
@@ -110,7 +110,7 @@ export default function Home() {
             <div className="flex flex-col items-center ">
               <div className=" flex">
                 <Link href={"#"} className="m-auto ">
-                  <img src="./img/asset2/image 8 (1).png" alt="" className="w-[85px] h-[85px] rounded-md" />
+                  <img src="./img/asset2/image 8 (1).png" alt="" className="w-[85px] h-[85px] rounded-md shadow-md" />
                 </Link>
               </div>
               <div className="text-xs font-bold text-[#505050] pt-[5px]">Jas Oversized</div>
@@ -118,7 +118,7 @@ export default function Home() {
             <div className="flex flex-col items-center ">
               <div className=" flex">
                 <Link href={"#"} className="m-auto ">
-                  <img src="./img/asset2/image 7.png" alt="" className="w-[85px] h-[85px] rounded-md" />
+                  <img src="./img/asset2/image 7.png" alt="" className="w-[85px] h-[85px] rounded-md shadow-md" />
                 </Link>
               </div>
               <div className="text-xs font-bold text-[#505050] pt-[5px]">Jas Oversized</div>
@@ -126,7 +126,7 @@ export default function Home() {
             <div className="flex flex-col items-center ">
               <div className=" flex">
                 <Link href={"#"} className="m-auto ">
-                  <img src="./img/asset2/image 6.png" alt="" className="w-[85px] h-[85px] rounded-md" />
+                  <img src="./img/asset2/image 6.png" alt="" className="w-[85px] h-[85px] rounded-md shadow-md" />
                 </Link>
               </div>
               <div className="text-xs font-bold text-[#505050] pt-[5px]">Yellow Blazer</div>
@@ -134,7 +134,7 @@ export default function Home() {
             <div className="flex flex-col items-center ">
               <div className=" flex">
                 <Link href={"#"} className="m-auto ">
-                  <img src="./img/asset2/image 9 (1).png" alt="" className="w-[85px] h-[85px] rounded-md" />
+                  <img src="./img/asset2/image 9 (1).png" alt="" className="w-[85px] h-[85px] rounded-md shadow-md" />
                 </Link>
               </div>
               <div className="text-xs font-bold text-[#505050] pt-[5px]">Jas Oversized</div>
@@ -142,7 +142,7 @@ export default function Home() {
             <div className="flex flex-col items-center ">
               <div className=" flex">
                 <Link href={"#"} className="m-auto ">
-                  <img src="./img/asset2/image 8.png" alt="" className="w-[85px] h-[85px] rounded-md" />
+                  <img src="./img/asset2/image 8.png" alt="" className="w-[85px] h-[85px] rounded-md shadow-md" />
                 </Link>
               </div>
               <div className="text-xs font-bold text-[#505050] pt-[5px]">Jas Oversized</div>
@@ -150,7 +150,7 @@ export default function Home() {
             <div className="flex flex-col items-center ">
               <div className=" flex">
                 <Link href={"#"} className="m-auto ">
-                  <img src="./img/asset2/image 7 (1).png" alt="" className="w-[85px] h-[85px] rounded-md" />
+                  <img src="./img/asset2/image 7 (1).png" alt="" className="w-[85px] h-[85px] rounded-md shadow-md" />
                 </Link>
               </div>
               <div className="text-xs font-bold text-[#505050] pt-[5px]">Jas Oversized</div>
@@ -158,7 +158,7 @@ export default function Home() {
             <div className="flex flex-col items-center ">
               <div className=" flex">
                 <Link href={"#"} className="m-auto ">
-                  <img src="./img/asset2/image 6 (1).png" alt="" className="w-[85px] h-[85px] rounded-md" />
+                  <img src="./img/asset2/image 6 (1).png" alt="" className="w-[85px] h-[85px] rounded-md shadow-md" />
                 </Link>
               </div>
               <div className="text-xs font-bold text-[#505050] pt-[5px]">Yellow Blazer</div>
@@ -176,7 +176,7 @@ export default function Home() {
             <div className="flex flex-col  ">
               <div className=" flex">
                 <Link href={"#"} className="m-auto ">
-                  <img src="./img/asset3/image 7 (2).png" alt="" className="w-[114px] h-[114px] rounded-md" />
+                  <img src="./img/asset3/image 7 (2).png" alt="" className="w-[114px] h-[114px] rounded-md shadow-md" />
                 </Link>
               </div>
               <div className="bg-[#243B97] h-[10px] w-[107px] rounded-[10px] mt-[3px] ">
@@ -204,7 +204,7 @@ export default function Home() {
             <div className="flex flex-col  ">
               <div className=" flex">
                 <Link href={"#"} className="m-auto ">
-                  <img src="./img/asset3/image 7 (3).png" alt="" className="w-[114px] h-[114px] rounded-md" />
+                  <img src="./img/asset3/image 7 (3).png" alt="" className="w-[114px] h-[114px] rounded-md shadow-md" />
                 </Link>
               </div>
               <div className="bg-[#243B97] h-[10px] w-[107px] rounded-[10px] mt-[3px] ">
