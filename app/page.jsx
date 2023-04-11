@@ -486,8 +486,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-      <div className="mb-96"></div>
     </div>
   );
 }

@@ -1,4 +1,5 @@
 import "./globals.css";
+import Footer from "./footer";
 
 export const metadata = {
   title: "Create Next App",
@@ -8,7 +9,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className="bg-[#CACACA]  mx-auto">
-      <body>{children}</body>
+      <body>
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }
