@@ -57,7 +57,7 @@ export default function Home() {
             </div>
             <div className="flex flex-col items-center ">
               <div className="bg-[#A1A0CB] w-[85px] h-[85px] rounded-full flex">
-                <Link href={"#"} className="m-auto ">
+                <Link href={"/products"} className="m-auto ">
                   <img src="./img/asset1/gadgets 1.png" alt="" />
                 </Link>
               </div>
