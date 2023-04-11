@@ -69,7 +69,7 @@ const ForgotPassword = () => {
         <div className="container">
           <div className="flex flex-wrap justify-between px-[10px]">
             <div>
-              <Link className="text-white font-bold text-base border-b" href={"/login"}>
+              <Link className="text-white font-bold text-base border-b" href={"/"}>
                 Login
               </Link>
             </div>
