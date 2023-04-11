@@ -486,6 +486,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <div className="mb-28"></div>
     </div>
   );
 }
