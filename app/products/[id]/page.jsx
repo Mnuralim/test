@@ -43,6 +43,12 @@ const ProductDetail = async ({ params }) => {
           </div>
         </div>
       </section>
+      <section>
+        <div className="container">
+          <h1>Select Size</h1>
+          <div></div>
+        </div>
+      </section>
     </div>
   );
 };
