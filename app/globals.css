@@ -7,17 +7,15 @@
 }
 
 .loader {
-  border: 8px solid #f3f3f3; /* border yang berputar */
-  border-top: 8px solid #000; /* warna border atas */
+  border: 8px solid #f3f3f3;
+  border-top: 8px solid #000;
   border-radius: 50%;
   width: 60px;
   height: 60px;
   animation: spin 1.5s linear infinite;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: rgba(0, 0, 0, 0.6); /* warna latar belakang transparan */
+  position: fixed; /* posisi elemen harus di-set menjadi fixed */
+
+  z-index: 9999; /* menempatkan elemen pada lapisan atas untuk memastikan loading muncul di depan elemen lain */
 }
 
 @keyframes spin {
