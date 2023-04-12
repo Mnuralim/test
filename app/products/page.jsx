@@ -34,8 +34,8 @@ const Products = () => {
   };
 
   const categories = [
-    { label: "Elektronik", value: "electronics" },
-    { label: "Pakaian", value: "clothing" },
+    { label: "samsung", value: "samsung" },
+    { label: "asus", value: "asus" },
     { label: "Makanan", value: "food" },
     { label: "Buku", value: "books" },
   ];
@@ -50,15 +50,17 @@ const Products = () => {
                 <MdOutlineArrowBack className="w-[38px] h-[38px] text-[#505050]" />
               </Link>
             </div>
-            <div className="text-[#505050] text-[20px] font-bold">Products</div>
+            {/* <div className="text-[#505050] text-[20px] font-bold">Products</div> */}
             <div>
               {/* <Input placeholder="Search" prefix={<BiSearchAlt2 />} suffix="Search" size="large" onChange={(e) => console.log(e.target.value)} /> */}
-              <BiSearchAlt2 className="w-[38px] h-[38px] text-[#ABABAB]" />
               <form action="" onSubmit={handleSearch}>
                 <label htmlFor="">
                   <input type="text" placeholder="search" value={value} onChange={(e) => setValue(e.target.value)} />
+                  {/* <BiSearchAlt2 className="w-[38px] h-[38px] text-[#ABABAB]" /> */}
                 </label>
-                <button type="submit">Cari</button>
+                <button type="submit" className="pl-1">
+                  Cari
+                </button>
               </form>
             </div>
           </div>
