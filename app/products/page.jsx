@@ -165,10 +165,8 @@ const Products = () => {
                         <h2 className="text-[#505050] text-xs font-bold">{product.title}</h2>
                       </div>
                       <div className="flex flex-wrap justify-between px-[10px] text-xs text-[#FF0000] py-[5px]">
-                        <p>{product.price}$</p>
-                        <p>
-                          <del className="text-[#505050]">2000$</del>
-                        </p>
+                        <p>{product.price.toLocaleString("id-ID", { style: "currency", currency: "IDR" })}</p>
+                        <p className="text-[#505050]">{product.quantity} pcs</p>
                       </div>
                       <div>
                         <svg width="58" height="10" viewBox="0 0 58 10" fill="none" xmlns="http://www.w3.org/2000/svg">
