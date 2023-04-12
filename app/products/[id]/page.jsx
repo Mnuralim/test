@@ -19,7 +19,7 @@ const ProductDetail = async ({ params }) => {
         <div className="container">
           <div className="flex flex-wrap justify-between items-center">
             <div>
-              <Link href={"/dashboard"}>
+              <Link href={"/products"}>
                 <MdOutlineArrowBack className="w-[38px] h-[38px] text-[#505050]" />
               </Link>
             </div>
