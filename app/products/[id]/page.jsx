@@ -4,7 +4,7 @@ import { FcLike } from "react-icons/fc";
 import Link from "next/link";
 
 const getSingleProduct = async (id) => {
-  const res = await fetch(`https://dummyjson.com/products/${id}`, {
+  const res = await fetch(`https://joyous-bat-ring.cyclic.app/api/product/get-single-product/${id}`, {
     cache: "no-store",
   });
   return res.json();
@@ -34,10 +34,10 @@ const ProductDetail = async ({ params }) => {
         <div className="container">
           <div className="flex flex-col justify-center items-center">
             <div className="pb-3">
-              <h1 className="text-[20px] text-[#505050] font-bold">{product.title}</h1>
+              <h1 className="text-[20px] text-[#505050] font-bold">{product.data.title}</h1>
             </div>
             <div>
-              <img src={product.thumbnail} alt="" className="w-[320px] h-[320px] rounded-[20px] filter shadow-md" />
+              <img src={product.data.thumbnail} alt="" className="w-[320px] h-[320px] rounded-[20px] filter shadow-md" />
             </div>
           </div>
         </div>
@@ -61,10 +61,10 @@ const ProductDetail = async ({ params }) => {
           </div>
           <h1 className="font-bold text-[20px] text-[#505050] pt-[10px]">Detais</h1>
           <div className="w-full h-[153px] pt-[5px]">
-            <p className="text-xs font-bold text-[#505050]">{product.description}</p>
+            <p className="text-xs font-bold text-[#505050]">{product.data.description}</p>
           </div>
           <div className="flex flex-wrap items-center justify-between px-[10px]  py-[5px]">
-            <h2 className="text-[20px] font-bold text-[#FF0000]">{product.price}$</h2>
+            <h2 className="text-[20px] font-bold text-[#FF0000]">{product.data.price}$</h2>
             <div>
               <Link href={"#"} className="bg-[#000000] rounded-md text-white py-2 px-[22px] text-[15px]">
                 Add to Cart

@@ -1,19 +1,37 @@
+"use client";
 import React from "react";
+import { useState, useEffect } from "react";
 import { BiSearchAlt2 } from "react-icons/bi";
 import { MdOutlineArrowBack, MdShoppingBag } from "react-icons/md";
 import { TbTruckDelivery } from "react-icons/tb";
-import { IoMdArrowDropdown } from "react-icons/io";
 import Link from "next/link";
+import axios from "axios";
 
-const getAllProducts = async () => {
-  const res = await fetch("https://dummyjson.com/products", {
-    cache: "no-store",
-  });
-  return res.json();
-};
+const Products = () => {
+  const [data, setData] = useState([]);
+  const [value, setValue] = useState("");
 
-const Products = async () => {
-  const products = await getAllProducts();
+  useEffect(() => {
+    loadProductsData();
+  }, []);
+
+  const loadProductsData = async () => {
+    return await axios
+      .get("https://joyous-bat-ring.cyclic.app/api/product/get-all-products/")
+      .then((response) => setData(response.data))
+      .catch((err) => console.log(err));
+  };
+
+  const handleSearch = async (e) => {
+    e.preventDefault();
+    return await axios
+      .get(`https://joyous-bat-ring.cyclic.app/api/product/get-all-products/?brand=${value}`)
+      .then((response) => {
+        setData(response.data);
+        setValue("");
+      })
+      .catch((err) => console.log(err));
+  };
 
   const categories = [
     { label: "Elektronik", value: "electronics" },
@@ -36,6 +54,12 @@ const Products = async () => {
             <div>
               {/* <Input placeholder="Search" prefix={<BiSearchAlt2 />} suffix="Search" size="large" onChange={(e) => console.log(e.target.value)} /> */}
               <BiSearchAlt2 className="w-[38px] h-[38px] text-[#ABABAB]" />
+              <form action="" onSubmit={handleSearch}>
+                <label htmlFor="">
+                  <input type="text" placeholder="search" value={value} onChange={(e) => setValue(e.target.value)} />
+                </label>
+                <button type="submit">Cari</button>
+              </form>
             </div>
           </div>
         </div>
@@ -126,8 +150,8 @@ const Products = async () => {
       <section className="pt-[10px] px-[11px] mx-auto">
         <div className="container mx-auto">
           <div className="flex flex-wrap gap-[10px] justify-between">
-            {products.products.map((product) => (
-              <Link key={product.id} href={`/products/${product.id}`}>
+            {data.map((product) => (
+              <Link key={product._id} href={`/products/${product._id}`}>
                 <div>
                   <div className="shadow-xl border border-solid border-[#505050] w-[190px] rounded-lg h-[231px]">
                     <div>
