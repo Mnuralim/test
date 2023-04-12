@@ -127,8 +127,8 @@ const Products = async () => {
         <div className="container mx-auto">
           <div className="flex flex-wrap gap-[10px] justify-between">
             {products.products.map((product) => (
-              <Link href={`/products/${product.id}`}>
-                <div key={product.id}>
+              <Link key={product.id} href={`/products/${product.id}`}>
+                <div>
                   <div className="shadow-xl border border-solid border-[#505050] w-[190px] rounded-lg h-[231px]">
                     <div>
                       <img src={product.thumbnail} alt="" className="rounded-lg w-full h-[170px]" />

@@ -30,7 +30,7 @@ const ForgotPassword = () => {
                   placeholder="Type here email"
                   className="py-[14px] px-[13px] block placeholder:text-[#EBEBEB] placeholder:text-[15px] bg-[#64B9FB] rounded-lg text-slate-50 focus:outline-none invalid:text-red-600 invalid:focus:ring-red-600 invalid:border-red-600 peer w-full mt-2 shadow"
                 />
-                <p class="mt-[2px] text-red-600 text-xs invisible peer-invalid:visible">Invalid email</p>
+                <p className="mt-[2px] text-red-600 text-xs invisible peer-invalid:visible">Invalid email</p>
               </label>
             </form>
           </div>
