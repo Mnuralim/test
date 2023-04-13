@@ -55,8 +55,8 @@ const Products = () => {
             <div>
               {/* <Input placeholder="Search" prefix={<BiSearchAlt2 />} suffix="Search" size="large" onChange={(e) => console.log(e.target.value)} /> */}
               <form action="" onSubmit={handleSearch}>
-                <label htmlFor="">
-                  <input type="text" placeholder="search" value={value} onChange={(e) => setValue(e.target.value)} />
+                <label htmlFor="search">
+                  <input type="text" id="search" placeholder="search brand" value={value} onChange={(e) => setValue(e.target.value)} className="focus:outline-none focus:border-none" />
                   {/* <BiSearchAlt2 className="w-[38px] h-[38px] text-[#ABABAB]" /> */}
                 </label>
                 <button type="submit" className="pl-1">
