@@ -18,11 +18,7 @@ const Products = () => {
 
   const loadProductsData = async () => {
     return await axios
-      .get("https://joyous-bat-ring.cyclic.app/api/product/get-all-products/", {
-        headers: {
-          "Cache-Control": "no-store",
-        },
-      })
+      .get("https://joyous-bat-ring.cyclic.app/api/product/get-all-products/")
       .then((response) => setData(response.data))
       .catch((err) => console.log(err));
   };
@@ -162,7 +158,7 @@ const Products = () => {
                 <div>
                   <div className="shadow-xl border border-solid border-[#505050] w-[190px] rounded-lg h-[231px]">
                     <div>
-                      <Image src={product.thumbnail} width={231} height={191} alt="" className="rounded-lg w-full h-[170px]" />
+                      <Image src={product.thumbnail} width={231} height={170} alt="" className="rounded-lg w-full h-[170px]" />
                     </div>
 
                     <div className="px-[4px]">
