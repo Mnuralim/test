@@ -133,19 +133,19 @@ const Products = () => {
         <div className="container ">
           <div className="flex flex-wrap justify-between bg-[#D9D9D9] py-[4px] px-[10px] gap-[10px] items-center">
             <div>
-              <img src="./img/asset5/image 20.png" alt="" />
+              <Image width={60} height={60} src="/img/asset5/image 20.png" alt="" />
             </div>
             <div>
-              <img src="./img/asset5/image 19.png" alt="" />
+              <Image width={60} height={60} src="/img/asset5/image 19.png" alt="" />
             </div>
             <div>
-              <img src="./img/asset5/image 18.png" alt="" />
+              <Image width={60} height={60} src="/img/asset5/image 18.png" alt="" />
             </div>
             <div>
-              <img src="./img/asset5/image 17.png" alt="" />
+              <Image width={60} height={60} src="/img/asset5/image 17.png" alt="" />
             </div>
             <div>
-              <img src="./img/asset5/image 16.png" alt="" />
+              <Image width={60} height={60} src="/img/asset5/image 16.png" alt="" />
             </div>
           </div>
         </div>
