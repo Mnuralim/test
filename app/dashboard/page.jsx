@@ -230,7 +230,7 @@ export default async function Home() {
           </div>
           <div className="flex flex-wrap gap-[10px] justify-between">
             {products.products.map((product) => (
-              <Link key={product.id} href={`/products/${product.id}`}>
+              <div key={product.id}>
                 <div>
                   <div className="shadow-xl border border-solid border-[#505050] w-[190px] rounded-lg h-[231px]">
                     <div>
@@ -274,7 +274,7 @@ export default async function Home() {
                     </div>
                   </div>
                 </div>
-              </Link>
+              </div>
             ))}
           </div>
         </div>
