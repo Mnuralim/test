@@ -7,6 +7,7 @@ import { TbTruckDelivery } from "react-icons/tb";
 import Link from "next/link";
 import axios from "axios";
 import Image from "next/image";
+import Marquee from "react-fast-marquee";
 
 const Products = () => {
   const [data, setData] = useState([]);
