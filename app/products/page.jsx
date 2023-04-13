@@ -6,6 +6,7 @@ import { MdOutlineArrowBack, MdShoppingBag } from "react-icons/md";
 import { TbTruckDelivery } from "react-icons/tb";
 import Link from "next/link";
 import axios from "axios";
+import Image from "next/image";
 
 const Products = () => {
   const [data, setData] = useState([]);
@@ -17,7 +18,11 @@ const Products = () => {
 
   const loadProductsData = async () => {
     return await axios
-      .get("https://joyous-bat-ring.cyclic.app/api/product/get-all-products/")
+      .get("https://joyous-bat-ring.cyclic.app/api/product/get-all-products/", {
+        headers: {
+          "Cache-Control": "no-store",
+        },
+      })
       .then((response) => setData(response.data))
       .catch((err) => console.log(err));
   };
@@ -157,7 +162,7 @@ const Products = () => {
                 <div>
                   <div className="shadow-xl border border-solid border-[#505050] w-[190px] rounded-lg h-[231px]">
                     <div>
-                      <img src={product.thumbnail} alt="" className="rounded-lg w-full h-[170px]" />
+                      <Image src={product.thumbnail} width={231} height={191} alt="" className="rounded-lg w-full h-[170px]" />
                     </div>
 
                     <div className="px-[4px]">

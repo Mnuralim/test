@@ -6,18 +6,6 @@
   background: linear-gradient(to top, #60a5fa, #ffffff);
 }
 
-.loader {
-  border: 8px solid #f3f3f3;
-  border-top: 8px solid #000;
-  border-radius: 50%;
-  width: 60px;
-  height: 60px;
-  animation: spin 1.5s linear infinite;
-  position: fixed; /* posisi elemen harus di-set menjadi fixed */
-
-  z-index: 9999; /* menempatkan elemen pada lapisan atas untuk memastikan loading muncul di depan elemen lain */
-}
-
 @keyframes spin {
   0% {
     transform: rotate(0deg);
@@ -25,4 +13,9 @@
   100% {
     transform: rotate(360deg);
   }
+}
+
+.loader {
+  border-top-color: #48bb78;
+  animation: spin 1s linear infinite;
 }

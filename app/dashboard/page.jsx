@@ -1,5 +1,6 @@
 import { BiSearchAlt2 } from "react-icons/bi";
 import Link from "next/link";
+import Image from "next/image";
 
 const getAllProducts = async () => {
   const res = await fetch("https://dummyjson.com/products", {
@@ -17,7 +18,7 @@ export default async function Home() {
         <div className="container">
           <div className="flex flex-wrap justify-between items-center">
             <div>
-              <img src="./img/logo.png" alt="logo" className="w-[126px] h-[38px]" />
+              <Image width={126} height={38} src="/img/logo.png" alt="logo" className="w-[126px] h-[38px]" />
             </div>
             <div>
               {/* <Input placeholder="Search" prefix={<BiSearchAlt2 />} suffix="Search" size="large" onChange={(e) => console.log(e.target.value)} /> */}
@@ -32,7 +33,7 @@ export default async function Home() {
             <div className="flex flex-col items-center ">
               <div className="bg-[#A1A0CB] w-[85px] h-[85px] rounded-full flex">
                 <Link href={"#"} className="m-auto ">
-                  <img src="./img/asset1/young-man.png" alt="" />
+                  <Image width={55} height={55} src="/img/asset1/young-man.png" alt="" />
                 </Link>
               </div>
               <div className="text-xs font-bold text-[#505050] pt-[5px]">Man</div>
@@ -40,7 +41,7 @@ export default async function Home() {
             <div className="flex flex-col items-center ">
               <div className="bg-[#A1A0CB] w-[85px] h-[85px] rounded-full flex">
                 <Link href={"#"} className="m-auto ">
-                  <img src="./img/asset1/woman.png" alt="" />
+                  <Image width={55} height={55} src="/img/asset1/woman.png" alt="" />
                 </Link>
               </div>
               <div className="text-xs font-bold text-[#505050] pt-[5px]">Women</div>
@@ -48,7 +49,7 @@ export default async function Home() {
             <div className="flex flex-col items-center ">
               <div className="bg-[#A1A0CB] w-[85px] h-[85px] rounded-full flex">
                 <Link href={"#"} className="m-auto ">
-                  <img src="./img/asset1/shop 1.png" alt="" />
+                  <Image width={55} height={55} src="/img/asset1/shop 1.png" alt="" />
                 </Link>
               </div>
               <div className="text-xs font-bold text-[#505050] pt-[5px]">Shop</div>
@@ -56,7 +57,7 @@ export default async function Home() {
             <div className="flex flex-col items-center ">
               <div className="bg-[#A1A0CB] w-[85px] h-[85px] rounded-full flex">
                 <Link href={"#"} className="m-auto ">
-                  <img src="./img/asset1/shopping-bag 1.png" alt="" />
+                  <Image width={55} height={55} src="/img/asset1/shopping-bag 1.png" alt="" />
                 </Link>
               </div>
               <div className="text-xs font-bold text-[#505050] pt-[5px]">Groceries</div>
@@ -64,7 +65,7 @@ export default async function Home() {
             <div className="flex flex-col items-center ">
               <div className="bg-[#A1A0CB] w-[85px] h-[85px] rounded-full flex">
                 <Link href={"/products"} className="m-auto ">
-                  <img src="./img/asset1/gadgets 1.png" alt="" />
+                  <Image width={55} height={55} src="/img/asset1/gadgets 1.png" alt="" />
                 </Link>
               </div>
               <div className="text-xs font-bold text-[#505050] pt-[5px]">Electronics</div>
@@ -72,7 +73,7 @@ export default async function Home() {
             <div className="flex flex-col items-center ">
               <div className="bg-[#A1A0CB] w-[85px] h-[85px] rounded-full flex">
                 <Link href={"#"} className="m-auto ">
-                  <img src="./img/asset1/furniture 1.png" alt="" />
+                  <Image width={55} height={55} src="/img/asset1/furniture 1.png" alt="" />
                 </Link>
               </div>
               <div className="text-xs font-bold text-[#505050] pt-[5px]">Furniture</div>
@@ -80,7 +81,7 @@ export default async function Home() {
             <div className="flex flex-col items-center ">
               <div className="bg-[#A1A0CB] w-[85px] h-[85px] rounded-full flex">
                 <Link href={"#"} className="m-auto ">
-                  <img src="./img/asset1/presents 1.png" alt="" />
+                  <Image width={55} height={55} src="/img/asset1/presents 1.png" alt="" />
                 </Link>
               </div>
               <div className="text-xs font-bold text-[#505050] pt-[5px]">Gifts & Toys</div>
@@ -88,7 +89,7 @@ export default async function Home() {
             <div className="flex flex-col items-center ">
               <div className="bg-[#A1A0CB] w-[85px] h-[85px] rounded-full flex">
                 <Link href={"#"} className="m-auto ">
-                  <img src="./img/asset1/other 1.png" alt="" />
+                  <Image width={55} height={55} src="/img/asset1/other 1.png" alt="" />
                 </Link>
               </div>
               <div className="text-xs font-bold text-[#505050] pt-[5px]">See All</div>
@@ -105,7 +106,7 @@ export default async function Home() {
             <div className="flex flex-col items-center ">
               <div className=" flex">
                 <Link href={"#"} className="m-auto ">
-                  <img src="./img/asset2/image 9.png" alt="" className="w-[85px] h-[85px] rounded-md shadow-md " />
+                  <Image width={85} height={85} src="/img/asset2/image 9.png" alt="" className="w-[85px] h-[85px] rounded-md shadow-md " />
                 </Link>
               </div>
               <div className="text-xs font-bold text-[#505050] pt-[5px]">Jas Oversized</div>
@@ -113,7 +114,7 @@ export default async function Home() {
             <div className="flex flex-col items-center ">
               <div className=" flex">
                 <Link href={"#"} className="m-auto ">
-                  <img src="./img/asset2/image 8 (1).png" alt="" className="w-[85px] h-[85px] rounded-md shadow-md" />
+                  <Image width={85} height={85} src="/img/asset2/image 8 (1).png" alt="" className="w-[85px] h-[85px] rounded-md shadow-md" />
                 </Link>
               </div>
               <div className="text-xs font-bold text-[#505050] pt-[5px]">Jas Oversized</div>
@@ -121,7 +122,7 @@ export default async function Home() {
             <div className="flex flex-col items-center ">
               <div className=" flex">
                 <Link href={"#"} className="m-auto ">
-                  <img src="./img/asset2/image 7.png" alt="" className="w-[85px] h-[85px] rounded-md shadow-md" />
+                  <Image width={85} height={85} src="/img/asset2/image 7.png" alt="" className="w-[85px] h-[85px] rounded-md shadow-md" />
                 </Link>
               </div>
               <div className="text-xs font-bold text-[#505050] pt-[5px]">Jas Oversized</div>
@@ -129,7 +130,7 @@ export default async function Home() {
             <div className="flex flex-col items-center ">
               <div className=" flex">
                 <Link href={"#"} className="m-auto ">
-                  <img src="./img/asset2/image 6.png" alt="" className="w-[85px] h-[85px] rounded-md shadow-md" />
+                  <Image width={85} height={85} src="/img/asset2/image 6.png" alt="" className="w-[85px] h-[85px] rounded-md shadow-md" />
                 </Link>
               </div>
               <div className="text-xs font-bold text-[#505050] pt-[5px]">Yellow Blazer</div>
@@ -137,7 +138,7 @@ export default async function Home() {
             <div className="flex flex-col items-center ">
               <div className=" flex">
                 <Link href={"#"} className="m-auto ">
-                  <img src="./img/asset2/image 9 (1).png" alt="" className="w-[85px] h-[85px] rounded-md shadow-md" />
+                  <Image width={85} height={85} src="/img/asset2/image 9 (1).png" alt="" className="w-[85px] h-[85px] rounded-md shadow-md" />
                 </Link>
               </div>
               <div className="text-xs font-bold text-[#505050] pt-[5px]">Jas Oversized</div>
@@ -145,7 +146,7 @@ export default async function Home() {
             <div className="flex flex-col items-center ">
               <div className=" flex">
                 <Link href={"#"} className="m-auto ">
-                  <img src="./img/asset2/image 8.png" alt="" className="w-[85px] h-[85px] rounded-md shadow-md" />
+                  <Image width={85} height={85} src="/img/asset2/image 8.png" alt="" className="w-[85px] h-[85px] rounded-md shadow-md" />
                 </Link>
               </div>
               <div className="text-xs font-bold text-[#505050] pt-[5px]">Jas Oversized</div>
@@ -153,7 +154,7 @@ export default async function Home() {
             <div className="flex flex-col items-center ">
               <div className=" flex">
                 <Link href={"#"} className="m-auto ">
-                  <img src="./img/asset2/image 7 (1).png" alt="" className="w-[85px] h-[85px] rounded-md shadow-md" />
+                  <Image width={85} height={85} src="/img/asset2/image 7 (1).png" alt="" className="w-[85px] h-[85px] rounded-md shadow-md" />
                 </Link>
               </div>
               <div className="text-xs font-bold text-[#505050] pt-[5px]">Jas Oversized</div>
@@ -161,7 +162,7 @@ export default async function Home() {
             <div className="flex flex-col items-center ">
               <div className=" flex">
                 <Link href={"#"} className="m-auto ">
-                  <img src="./img/asset2/image 6 (1).png" alt="" className="w-[85px] h-[85px] rounded-md shadow-md" />
+                  <Image width={85} height={85} src="/img/asset2/image 6 (1).png" alt="" className="w-[85px] h-[85px] rounded-md shadow-md" />
                 </Link>
               </div>
               <div className="text-xs font-bold text-[#505050] pt-[5px]">Yellow Blazer</div>
@@ -179,7 +180,7 @@ export default async function Home() {
             <div className="flex flex-col  ">
               <div className=" flex">
                 <Link href={"#"} className="m-auto ">
-                  <img src="./img/asset3/image 7 (2).png" alt="" className="w-[114px] h-[114px] rounded-md shadow-md" />
+                  <Image width={114} height={114} src="/img/asset3/image 7 (2).png" alt="" className="w-[114px] h-[114px] rounded-md shadow-md" />
                 </Link>
               </div>
               <div className="bg-[#243B97] h-[10px] w-[107px] rounded-[10px] mt-[3px] ">
@@ -193,7 +194,7 @@ export default async function Home() {
             <div className="flex flex-col  ">
               <div className=" flex">
                 <Link href={"#"} className="m-auto ">
-                  <img src="./img/asset3/image 10.png" alt="" className="w-1104px] h-[114px] rounded-md" />
+                  <Image width={114} height={114} src="/img/asset3/image 10.png" alt="" className="w-1104px] h-[114px] rounded-md" />
                 </Link>
               </div>
               <div className="bg-[#243B97] h-[10px] w-[107px] rounded-[10px] mt-[3px] ">
@@ -207,7 +208,7 @@ export default async function Home() {
             <div className="flex flex-col  ">
               <div className=" flex">
                 <Link href={"#"} className="m-auto ">
-                  <img src="./img/asset3/image 7 (3).png" alt="" className="w-[114px] h-[114px] rounded-md shadow-md" />
+                  <Image width={114} height={114} src="/img/asset3/image 7 (3).png" alt="" className="w-[114px] h-[114px] rounded-md shadow-md" />
                 </Link>
               </div>
               <div className="bg-[#243B97] h-[10px] w-[107px] rounded-[10px] mt-[3px] ">
@@ -233,7 +234,7 @@ export default async function Home() {
                 <div>
                   <div className="shadow-xl border border-solid border-[#505050] w-[190px] rounded-lg h-[231px]">
                     <div>
-                      <img src={product.thumbnail} alt="" className="rounded-lg w-full h-[170px]" />
+                      <Image width={188.4} height={170} src={product.thumbnail} alt="" className="rounded-lg w-full h-[170px]" />
                     </div>
 
                     <div className="px-[4px]">

@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 const Login = () => {
   return (
@@ -7,7 +8,7 @@ const Login = () => {
       <section className="pt-6">
         <div className="container flex justify-center ">
           <div className="px-[76px]">
-            <img src="./img/logo.png" alt="" />
+            <Image width={209} height={63} src="/img/logo.png" alt="" />
           </div>
         </div>
       </section>

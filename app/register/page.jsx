@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 const Register = () => {
   return (
@@ -7,7 +8,7 @@ const Register = () => {
       <section className="pt-6">
         <div className="container flex justify-center ">
           <div className="px-[76px]">
-            <img src="./img/logo.png" alt="" />
+            <Image width={209} height={63} src="/img/logo.png" alt="" />
           </div>
         </div>
       </section>
@@ -16,7 +17,7 @@ const Register = () => {
         <div className="container flex justify-center">
           <div className="flex relative ">
             <div>
-              <img src="./img/profile.png" alt="profile" />
+              <Image width={100} height={100} src="/img/profile.png" alt="profile" />
             </div>
             <div className="absolute top-14 -right-5">
               <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">

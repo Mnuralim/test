@@ -2,6 +2,7 @@ import React from "react";
 import { MdOutlineArrowBack } from "react-icons/md";
 import { FcLike } from "react-icons/fc";
 import Link from "next/link";
+import Image from "next/image";
 
 const getSingleProduct = async (id) => {
   const res = await fetch(`https://joyous-bat-ring.cyclic.app/api/product/get-single-product/${id}`, {
@@ -37,7 +38,7 @@ const ProductDetail = async ({ params }) => {
               <h1 className="text-[20px] text-[#505050] font-bold">{product.data.title}</h1>
             </div>
             <div>
-              <img src={product.data.thumbnail} alt="" className="w-[320px] h-[320px] rounded-[20px] filter shadow-md" />
+              <Image src={product.data.thumbnail} width={320} height={320} alt="" className="w-[320px] h-[320px] rounded-[20px] filter shadow-md" />
             </div>
           </div>
         </div>
@@ -64,7 +65,7 @@ const ProductDetail = async ({ params }) => {
             <p className="text-xs font-bold text-[#505050]">{product.data.description}</p>
           </div>
           <div className="flex flex-wrap items-center justify-between px-[10px]  py-[5px]">
-            <h2 className="text-[20px] font-bold text-[#FF0000]">{product.data.price}$</h2>
+            <h2 className="text-[20px] font-bold text-[#FF0000]">{product.data.price.toLocaleString("id-ID", { style: "currency", currency: "IDR" })}</h2>
             <div>
               <Link href={"#"} className="bg-[#000000] rounded-md text-white py-2 px-[22px] text-[15px]">
                 Add to Cart
