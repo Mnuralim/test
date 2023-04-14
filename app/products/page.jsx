@@ -1,14 +1,14 @@
 "use client";
 import React from "react";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { MdOutlineArrowBack, MdShoppingBag } from "react-icons/md";
 import { TbTruckDelivery } from "react-icons/tb";
 import Link from "next/link";
-import axios from "axios";
 import Image from "next/image";
 import Dropdown from "react-dropdown";
 import useSWR from "swr";
 import Loading from "../loading";
+import { AiOutlineSearch } from "react-icons/ai";
 
 const Products = () => {
   const [search, setSearch] = useState("");
@@ -54,19 +54,9 @@ const Products = () => {
               </Link>
             </div>
             {/* <div className="text-[#505050] text-[20px] font-bold">Products</div> */}
-            <div>
-              {/* <Input placeholder="Search" prefix={<BiSearchAlt2 />} suffix="Search" size="large" onChange={(e) => console.log(e.target.value)} /> */}
-              {/* <form action="" onSubmit={handleSearch}>
-                <label htmlFor="search">
-                  <input type="text" id="search" placeholder="search brand" value={value} onChange={(e) => setValue(e.target.value)} className="focus:outline-none focus:border-none" />
-                  <BiSearchAlt2 className="w-[38px] h-[38px] text-[#ABABAB]" />
-                </label>
-                <button type="submit" className="pl-1">
-                  Cari
-                </button>
-              </form> */}
-
-              <input type="text" placeholder="search" value={search} onChange={(e) => setSearch(e.target.value)} />
+            <div className="flex flex-wrap justify-center items-center relative">
+              <input type="text" placeholder="search" className="pl-6" value={search} onChange={(e) => setSearch(e.target.value)} />
+              <AiOutlineSearch className="w-[15px] h-[15px] text-[#505050] absolute right-[183px]" />
             </div>
           </div>
         </div>
