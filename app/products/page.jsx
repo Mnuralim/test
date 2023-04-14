@@ -1,17 +1,17 @@
 "use client";
 import React from "react";
 import { useState, useEffect } from "react";
-import { BiSearchAlt2 } from "react-icons/bi";
 import { MdOutlineArrowBack, MdShoppingBag } from "react-icons/md";
 import { TbTruckDelivery } from "react-icons/tb";
 import Link from "next/link";
 import axios from "axios";
 import Image from "next/image";
-import Marquee from "react-fast-marquee";
+import Dropdown from "react-dropdown";
 
 const Products = () => {
   const [data, setData] = useState([]);
   const [value, setValue] = useState("");
+  const [brand, setBrand] = useState("");
 
   useEffect(() => {
     loadProductsData();
@@ -35,12 +35,23 @@ const Products = () => {
       .catch((err) => console.log(err));
   };
 
-  const categories = [
-    { label: "samsung", value: "samsung" },
-    { label: "asus", value: "asus" },
-    { label: "Makanan", value: "food" },
-    { label: "Buku", value: "books" },
-  ];
+  const handleSelect = (option) => {
+    setBrand(option.value);
+  };
+  // const brandOptions = [
+  //   { value: "", label: "Brand" },
+  //   { value: "apple", label: "Apple" },
+  //   { value: "samsung", label: "Samsung" },
+  //   { value: "hp", label: "Hp" },
+  // ];
+  const brandOptions = [...new Set(data.map((d) => d.brand))].map((brand) => ({
+    label: brand,
+    value: brand,
+  }));
+
+  const filteredProduct = brand ? data.filter((product) => product.brand === brand) : data;
+
+  console.log(value);
 
   return (
     <div>
@@ -97,34 +108,34 @@ const Products = () => {
           <div>
             <div className="flex justify-between items-center">
               <div className="flex flex-row justify-center items-center gap-[4px] -ml-2 text-[15px] text-[#505050]">
-                <select className=" bg-transparent">
-                  <option value="">Brand</option>
-                  {categories.map((category) => (
-                    <option className="w-6 bg-transparent" key={category.value} value={category.value}>
-                      {category.label}
-                    </option>
-                  ))}
-                </select>
+                {/* <select onChange={handleChange}>
+                  <option value="">Select a brand</option>
+                  <option value="apple">Apple</option>
+                  <option value="samsung">Samsung</option>
+                  <option value="hp">Xiaomi</option>
+                </select> */}
+
+                <Dropdown options={brandOptions} onChange={handleSelect} value={brand} placeholder="Select a brand" />
               </div>
               <div className="flex flex-row justify-center items-center gap-[2px] text-[15px] text-[#505050]">
-                <select className=" bg-transparent">
+                {/* <select className=" bg-transparent">
                   <option value="">Sub Category</option>
                   {categories.map((category) => (
                     <option className="w-6 bg-transparent" key={category.value} value={category.value}>
                       {category.label}
                     </option>
                   ))}
-                </select>
+                </select> */}
               </div>
               <div className="flex flex-row justify-center items-center gap-[4px] text-[15px] text-[#505050]">
-                <select disabled className=" bg-transparent">
+                {/* <select disabled className=" bg-transparent">
                   <option value="">Location</option>
                   {categories.map((category) => (
                     <option disabled className="w-6 bg-transparent" key={category.value} value={category.value}>
                       {category.label}
                     </option>
                   ))}
-                </select>
+                </select> */}
               </div>
             </div>
           </div>
@@ -154,7 +165,7 @@ const Products = () => {
       <section className="pt-[10px] px-[11px] mx-auto">
         <div className="container mx-auto">
           <div className="flex flex-wrap gap-[10px] justify-between">
-            {data.map((product) => (
+            {filteredProduct.map((product) => (
               <Link key={product._id} href={`/products/${product._id}`}>
                 <div>
                   <div className="shadow-xl border border-solid border-[#505050] w-[190px] rounded-lg h-[231px]">
