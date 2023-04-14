@@ -7,51 +7,41 @@ import Link from "next/link";
 import axios from "axios";
 import Image from "next/image";
 import Dropdown from "react-dropdown";
+import useSWR from "swr";
+import Loading from "../loading";
 
 const Products = () => {
-  const [data, setData] = useState([]);
-  const [value, setValue] = useState("");
+  const [search, setSearch] = useState("");
   const [brand, setBrand] = useState("");
 
-  useEffect(() => {
-    loadProductsData();
-  }, []);
+  //use swr
+  const fetcher = (url) => fetch(url).then((res) => res.json());
+  const { data, error } = useSWR("https://joyous-bat-ring.cyclic.app/api/product/get-all-products/", fetcher);
+  console.log(data);
+  if (error) return <div>Failed to load</div>;
+  if (!data) return <Loading />;
 
-  const loadProductsData = async () => {
-    return await axios
-      .get("https://joyous-bat-ring.cyclic.app/api/product/get-all-products/")
-      .then((response) => setData(response.data))
-      .catch((err) => console.log(err));
-  };
-
-  const handleSearch = async (e) => {
-    e.preventDefault();
-    return await axios
-      .get(`https://joyous-bat-ring.cyclic.app/api/product/get-all-products/?brand=${value}`)
-      .then((response) => {
-        setData(response.data);
-        setValue("");
-      })
-      .catch((err) => console.log(err));
-  };
-
+  //handle select
   const handleSelect = (option) => {
     setBrand(option.value);
   };
-  // const brandOptions = [
-  //   { value: "", label: "Brand" },
-  //   { value: "apple", label: "Apple" },
-  //   { value: "samsung", label: "Samsung" },
-  //   { value: "hp", label: "Hp" },
-  // ];
+
+  //brand options declaration
   const brandOptions = [...new Set(data.map((d) => d.brand))].map((brand) => ({
     label: brand,
     value: brand,
   }));
 
-  const filteredProduct = brand ? data.filter((product) => product.brand === brand) : data;
-
-  console.log(value);
+  //filter products
+  const filteredProduct = data.filter((product) => {
+    if (brand && product.brand !== brand) {
+      return false;
+    }
+    if (search && !product.title.toLowerCase().includes(search.toLowerCase())) {
+      return false;
+    }
+    return true;
+  });
 
   return (
     <div>
@@ -66,15 +56,17 @@ const Products = () => {
             {/* <div className="text-[#505050] text-[20px] font-bold">Products</div> */}
             <div>
               {/* <Input placeholder="Search" prefix={<BiSearchAlt2 />} suffix="Search" size="large" onChange={(e) => console.log(e.target.value)} /> */}
-              <form action="" onSubmit={handleSearch}>
+              {/* <form action="" onSubmit={handleSearch}>
                 <label htmlFor="search">
                   <input type="text" id="search" placeholder="search brand" value={value} onChange={(e) => setValue(e.target.value)} className="focus:outline-none focus:border-none" />
-                  {/* <BiSearchAlt2 className="w-[38px] h-[38px] text-[#ABABAB]" /> */}
+                  <BiSearchAlt2 className="w-[38px] h-[38px] text-[#ABABAB]" />
                 </label>
                 <button type="submit" className="pl-1">
                   Cari
                 </button>
-              </form>
+              </form> */}
+
+              <input type="text" placeholder="search" value={search} onChange={(e) => setSearch(e.target.value)} />
             </div>
           </div>
         </div>
