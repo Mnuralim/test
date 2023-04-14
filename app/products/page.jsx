@@ -8,7 +8,6 @@ import Image from "next/image";
 import Dropdown from "react-dropdown";
 import useSWR from "swr";
 import Loading from "../loading";
-import { AiOutlineSearch } from "react-icons/ai";
 
 const Products = () => {
   const [search, setSearch] = useState("");
@@ -55,8 +54,7 @@ const Products = () => {
             </div>
             {/* <div className="text-[#505050] text-[20px] font-bold">Products</div> */}
             <div className="flex flex-wrap justify-center items-center relative">
-              <input type="text" placeholder="search" className="pl-6" value={search} onChange={(e) => setSearch(e.target.value)} />
-              <AiOutlineSearch className="w-[15px] h-[15px] text-[#505050] absolute right-[183px]" />
+              <input type="text" placeholder="search" value={search} onChange={(e) => setSearch(e.target.value)} />
             </div>
           </div>
         </div>
@@ -87,38 +85,13 @@ const Products = () => {
               </div>
             </div>
           </div>
-          <div>
+          <div className="capitalize">
             <div className="flex justify-between items-center">
-              <div className="flex flex-row justify-center items-center gap-[4px] -ml-2 text-[15px] text-[#505050]">
-                {/* <select onChange={handleChange}>
-                  <option value="">Select a brand</option>
-                  <option value="apple">Apple</option>
-                  <option value="samsung">Samsung</option>
-                  <option value="hp">Xiaomi</option>
-                </select> */}
-
-                <Dropdown options={brandOptions} onChange={handleSelect} value={brand} placeholder="Select a brand" />
+              <div className="flex flex-row justify-center items-center gap-[4px] -ml-2 text-[15px] text-[#505050] ">
+                <Dropdown options={brandOptions} onChange={handleSelect} value={brand} placeholder="Select a brand" className="  w-32" />
               </div>
-              <div className="flex flex-row justify-center items-center gap-[2px] text-[15px] text-[#505050]">
-                {/* <select className=" bg-transparent">
-                  <option value="">Sub Category</option>
-                  {categories.map((category) => (
-                    <option className="w-6 bg-transparent" key={category.value} value={category.value}>
-                      {category.label}
-                    </option>
-                  ))}
-                </select> */}
-              </div>
-              <div className="flex flex-row justify-center items-center gap-[4px] text-[15px] text-[#505050]">
-                {/* <select disabled className=" bg-transparent">
-                  <option value="">Location</option>
-                  {categories.map((category) => (
-                    <option disabled className="w-6 bg-transparent" key={category.value} value={category.value}>
-                      {category.label}
-                    </option>
-                  ))}
-                </select> */}
-              </div>
+              <div className="flex flex-row justify-center items-center gap-[2px] text-[15px] text-[#505050]"></div>
+              <div className="flex flex-row justify-center items-center gap-[4px] text-[15px] text-[#505050]"></div>
             </div>
           </div>
         </div>
