@@ -225,14 +225,14 @@ export default async function Home() {
 
       <section className="pt-[15px] px-[11px] mx-auto">
         <div className="container mx-auto">
-          <div className="flex justify-center pb-3">
+          <div className="flex flex-wrap justify-center pb-3">
             <h1 className="text-xl text-[#505050]">Just for you!</h1>
           </div>
           <div className="flex flex-wrap gap-[10px] justify-between">
             {products.products.map((product) => (
               <div key={product.id}>
                 <div>
-                  <div className="shadow-xl border border-solid border-[#505050] w-[190px] rounded-lg h-[231px]">
+                  <div className="shadow-xl border border-solid border-[#505050] w-[170px] rounded-lg h-[231px]">
                     <div>
                       <Image width={188.4} height={170} src={product.thumbnail} alt="" className="rounded-lg w-full h-[170px]" />
                     </div>
